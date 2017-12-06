@@ -19,7 +19,10 @@ end
 def printer(attendees)
   #name.each {|item| puts batch_badge_creator(item)}
   batch_badge_creator(attendees).each do |badge|
-puts badge 
-
+puts badge
+assign_rooms(attendees).each do |assignment|
+    puts assignment
+  end
+end
 
 end
