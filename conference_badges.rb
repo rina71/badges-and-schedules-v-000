@@ -18,13 +18,8 @@ end
 
 def printer(attendees)
   #name.each {|item| puts batch_badge_creator(item)}
-  arr = batch_badge_creator(attendees)
-  room = assign_rooms(attendees)
-
-  puts arr[0]
-  puts arr[1]
-  puts arr[2]
-  puts arr[3]
+  batch_badge_creator(attendees).each do |badge|
+puts badge 
 
 
 end
