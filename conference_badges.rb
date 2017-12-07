@@ -1,5 +1,5 @@
 
-name = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
 def badge_maker(name)
 return "Hello, my name is #{name}."
 end
@@ -18,11 +18,11 @@ def assign_rooms(name)
 end
 
 def printer(attendees)
-  #name.each {|item| puts batch_badge_creator(item)}
-  batch_badge_creator(attendees).each do |badge|
-puts badge
-assign_rooms(attendees).each do |assignment|
-    puts assignment
+
+  batch_badge_creator(attendees).each {|badge| puts badge}
+end
+  assign_rooms(attendees).each { |room| puts room}
+
   end
 end
 
