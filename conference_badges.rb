@@ -24,6 +24,6 @@ end
   assign_rooms(attendees).each { |room| puts room}
 
   end
-end
+
 
 end
